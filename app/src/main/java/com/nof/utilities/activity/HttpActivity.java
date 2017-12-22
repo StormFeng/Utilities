@@ -8,7 +8,7 @@ import android.os.Message;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.nof.utilities.Utils.HttpUtil;
+import com.nof.utilities.utils.HttpUtil;
 import com.nof.utilities.R;
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.nof.utilities.Utils;
+package com.nof.utilities.utils;
 
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;

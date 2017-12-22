@@ -1,15 +1,13 @@
 package com.nof.utilities;
 
 import android.app.Activity;
-import android.app.DialogFragment;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ProgressBar;
 
-import com.nof.utilities.Utils.FileUtil;
-import com.nof.utilities.activity.FadeActivity;
+import com.nof.utilities.activity.AnimActivity;
+import com.nof.utilities.activity.StarsMenuActivity;
+import com.nof.utilities.utils.FileUtil;
 import com.nof.utilities.activity.HttpActivity;
 import com.nof.utilities.fragment.ActivityFragment;
 
@@ -37,10 +35,14 @@ public class MainActivity extends Activity {
             case R.id.btnFragment:
                 startActivity(new Intent(this, ActivityFragment.class));
                 break;
+            case R.id.btnAnimLeftToRight:
+                startActivity(new Intent(this, AnimActivity.class));
+                break;
+            case R.id.btnStarsMenu:
+                startActivity(new Intent(this, StarsMenuActivity.class));
+                break;
             default:
                 break;
         }
     }
-
-
 }

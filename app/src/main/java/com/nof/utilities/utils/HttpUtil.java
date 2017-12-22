@@ -1,4 +1,4 @@
-package com.nof.utilities.Utils;
+package com.nof.utilities.utils;
 
 
 import java.io.BufferedReader;
