@@ -1,11 +1,14 @@
 package com.nof.utilities;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Path;
 import android.os.Bundle;
 import android.view.View;
 
 import com.nof.utilities.activity.AnimActivity;
+import com.nof.utilities.activity.BezierActivity;
 import com.nof.utilities.activity.StarsMenuActivity;
 import com.nof.utilities.utils.FileUtil;
 import com.nof.utilities.activity.HttpActivity;
@@ -40,6 +43,9 @@ public class MainActivity extends Activity {
                 break;
             case R.id.btnStarsMenu:
                 startActivity(new Intent(this, StarsMenuActivity.class));
+                break;
+            case R.id.btnBezier:
+                startActivity(new Intent(this, BezierActivity.class));
                 break;
             default:
                 break;

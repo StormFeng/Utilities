@@ -25,7 +25,7 @@ public class StarsMenuActivity extends Activity implements View.OnClickListener 
     private ImageView[] mFoldIvs = new ImageView[mFoldIds.length];
     private boolean isFoldMenuOpen = false;
 
-    private static final int DUTATION = 300;
+    private static final int DUTATION = 200;
     private static final int SCREEN_WIDTH = Resources.getSystem().getDisplayMetrics().widthPixels;
     private static final float STARS_RADIUS = TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP, 100, Resources.getSystem().getDisplayMetrics());
@@ -107,7 +107,8 @@ public class StarsMenuActivity extends Activity implements View.OnClickListener 
                 int x = (int) (mStarsIvs[mStarsIds.length-i].getWidth() + ITEM_INTERVAL) * (mStarsIds.length-i);
                 PropertyValuesHolder pX = PropertyValuesHolder.ofFloat("X",mStarsIvs[mStarsIds.length-i].getX(),x);
                 PropertyValuesHolder pRotation = PropertyValuesHolder.ofFloat("rotation",mStarsIvs[mStarsIds.length-i].getRotation(),360);
-                ObjectAnimator.ofPropertyValuesHolder(mStarsIvs[mStarsIds.length-i],pX,pRotation).setDuration(DUTATION*(mStarsIds.length-i)).start();
+                ObjectAnimator.ofPropertyValuesHolder(mStarsIvs[mStarsIds.length-i],pX,pRotation).
+                        setDuration(DUTATION*(mStarsIds.length-i)).start();
             }
         }else{
             for (int i = 1; i < 5; i++) {
