@@ -21,7 +21,7 @@ public class HttpActivity extends Activity {
 
     private final int GET = 0;
     private final int POST = 1;
-    private final String BASEURL = "http://v.juhe.cn/weixin/query";
+    private final String BASEURL = "http://192.168.6.118:8080/login";
     private Handler mHandler;
     private Map<String, String> params = new HashMap<>();
 
@@ -81,7 +81,7 @@ public class HttpActivity extends Activity {
 
         @Override
         protected String doInBackground(String... strs) {
-            return HttpUtil.get(BASEURL,params);
+            return HttpUtil.get(BASEURL,null);
         }
 
         @Override
