@@ -10,6 +10,7 @@ import android.view.View;
 import com.nof.utilities.activity.AnimActivity;
 import com.nof.utilities.activity.BezierActivity;
 import com.nof.utilities.activity.StarsMenuActivity;
+import com.nof.utilities.activity.UploadImgActivity;
 import com.nof.utilities.utils.FileUtil;
 import com.nof.utilities.activity.HttpActivity;
 import com.nof.utilities.fragment.ActivityFragment;
@@ -46,6 +47,9 @@ public class MainActivity extends Activity {
                 break;
             case R.id.btnBezier:
                 startActivity(new Intent(this, BezierActivity.class));
+                break;
+            case R.id.btnUploadImg:
+                startActivity(new Intent(this, UploadImgActivity.class));
                 break;
             default:
                 break;

@@ -26,6 +26,7 @@
         <activity android:name=".fragment.DetailActivity" />
         <activity android:name=".activity.StarsMenuActivity" />
         <activity android:name=".activity.BezierActivity" />
+        <activity android:name=".activity.UploadImgActivity" />
     </application>
 
 </manifest>
